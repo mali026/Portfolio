@@ -1,0 +1,258 @@
+body{
+    margin: 0;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+} 
+h3{
+    font-weight: 200;
+}
+h1{
+    font-weight: 900;
+}
+.highlight{
+    color: rgb(226, 42, 171);
+}
+.half-width {
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+    padding: 2%;
+    position: relative;
+    z-index: 2;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.half-width img {
+    width: 100%;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.hello {
+    background-image: url("image02/header-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+section {
+    height: 500px;
+    padding: 116px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.linkstyle{
+    text-decoration: none;
+    background-image: linear-gradient( 45deg, rgb(255, 148, 235), rgb(190, 8, 136)
+    );
+    background-color: rgb(146, 28, 224);
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: aliceblue;
+    font-weight: 900px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.academic{
+    background-image: url("image02/biography-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    height: 500px;
+}
+.academic h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.academic ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0;
+    list-style: none;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+.academic ul li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 15px;
+    flex: 1 1 300px; /* Flex grow, shrink, and basis */
+    max-width: 350px;
+    height: auto;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.academic h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.academic p {
+    font-size: 1em;
+    color: #666;
+    line-height: 1.5;
+}
+
+.academic ul li:hover {
+    transform: scale(1.50);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive Tweaks */
+@media (max-width: 768px) {
+    .academic ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .academic ul li {
+        width: 90%;
+    }
+
+    .academic h2 {
+        font-size: 2em;
+    }
+
+    .academic h3 {
+        font-size: 1.3em;
+    }
+
+    .academic p {
+        font-size: 1em;
+    }
+}
+
+.experience-area {
+    background-image: url("image02/latest-work-bg.png");
+    background-repeat: no-repeat;
+    background-position: left;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.single-experiences {
+    box-shadow: 10px 10px 40px grey;
+    border-radius: 10px;
+    background-color: aliceblue;
+    padding: 20px;
+    flex: 1 1 400px; /* Flex-grow, shrink, basis for responsiveness */
+    max-width: 600px;
+    min-width: 280px;
+    transition: transform 0.3s ease;
+}
+
+.single-experiences:hover {
+    transform: scale(1.04);
+}
+
+#work {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, rgb(255, 194, 244), rgb(190, 8, 136));
+    border-image-slice: 1;
+}
+
+#project {
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, rgb(203, 168, 246), rgb(152, 26, 214));
+    border-image-slice: 1;
+}
+
+.experience-area h1 {
+    width: 100%;
+    text-align: center;
+    font-size: 2.5em;
+    margin-bottom: 40px;
+}
+
+.single-experiences h2 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.single-experiences h3 {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.single-experiences p {
+    font-size: 1em;
+    line-height: 1.6;
+    color: #444;
+}
+
+/* Responsive tweaks */
+@media (max-width: 768px) {
+    .experience-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience-area h1 {
+        font-size: 2em;
+    }
+
+    .single-experiences {
+        width: 90%;
+    }
+}
+
+.contact {
+    background-image: url("image02/footer-bg.png");
+    background-repeat: no-repeat;
+    background-position: top right;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    text-align: center;
+}
+
+
+
+.contact-box {
+    background: linear-gradient(45deg, #f03a7a, #e9446a);
+    padding: 15px 150px;
+    border-radius: 10px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.email {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+footer p {
+    font-size: 12px;
+    color: gray;
+}
